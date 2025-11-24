@@ -1,4 +1,4 @@
-from Vehicle import Vehicle
+from .Vehicle import Vehicle
 
 
 class Motorcycle(Vehicle):

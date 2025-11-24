@@ -1,4 +1,4 @@
-from Vehicle import Vehicle
+from model.vehicles.Vehicle import Vehicle
 
 
 class Truck(Vehicle):

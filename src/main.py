@@ -1,13 +1,12 @@
-from VehicleFactory import VehicleFactory
+from infrastructure.factories.vehicle_factory import VehicleFactory
 
 
 def main():
-    factory = VehicleFactory()
 
-    v1 = factory.create_vehicle("car")
-    v2 = factory.create_vehicle("truck")
-    v3 = factory.create_vehicle("motorcycle")
-    v4 = factory.create_vehicle("plane")
+    v1 = VehicleFactory.create_vehicle("car")
+    v2 = VehicleFactory.create_vehicle("truck")
+    v3 = VehicleFactory.create_vehicle("motorcycle")
+    v4 = VehicleFactory.create_vehicle("plane")
 
     v1.start_engine()
     v2.start_engine()
