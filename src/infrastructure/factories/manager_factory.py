@@ -19,5 +19,4 @@ class ManagerFactory:
 
     @staticmethod
     def create_all():
-        ManagerFactory.create_example_manager()
         ManagerFactory.create_example_zmq_manager()
