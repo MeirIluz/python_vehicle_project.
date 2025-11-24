@@ -1,8 +1,8 @@
-from model.vehicles.Vehicle import Vehicle
-from model.vehicles.Car import Car
-from model.vehicles.Truck import Truck
-from model.vehicles.Motorcycle import Motorcycle
-from model.vehicles.Plane import Plane
+from model.data_classes.Vehicle import Vehicle
+from model.data_classes.Car import Car
+from model.data_classes.Truck import Truck
+from model.data_classes.Motorcycle import Motorcycle
+from model.data_classes.Plane import Plane
 
 
 class VehicleFactory:
