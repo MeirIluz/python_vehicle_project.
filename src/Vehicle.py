@@ -5,9 +5,7 @@ class Vehicle(ABC):
 
     ExistingVehicle = []
 
-
-    def __init_subclass__(cls, **kwargs):
-        super().__init_subclass__(**kwargs)
+    def __init_subclass__(cls):
         Vehicle.ExistingVehicle.append(cls)
 
 
