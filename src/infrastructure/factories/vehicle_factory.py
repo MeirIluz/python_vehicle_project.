@@ -7,7 +7,8 @@ class VehicleFactory:
         vehicles = [
             VehicleInfrastructureFactory.create_car(),
             VehicleInfrastructureFactory.create_motorcycle(),
-            VehicleInfrastructureFactory.create_truck()
+            VehicleInfrastructureFactory.create_truck(),
+            VehicleInfrastructureFactory.create_plane()
         ]
 
         for v in vehicles:
