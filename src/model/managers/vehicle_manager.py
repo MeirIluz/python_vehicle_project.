@@ -15,5 +15,5 @@ class VehicleManager(IVehicleManager):
         ]
 
     def run_all(self) -> None:
-        for v in self._vehicles:
-            v.start_engine()
+        for vehicle in self._vehicles:
+            vehicle.start_engine()
