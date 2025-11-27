@@ -7,10 +7,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the project
+#copy source code
 COPY . .
 
 WORKDIR /app/src
 
-# Run your app
+# Run app
 CMD ["python", "main.py"]
