@@ -1,8 +1,10 @@
 from infrastructure.interfaces.ivehicle_manager import IVehicleManager
 from infrastructure.interfaces.ivehicle import IVehicle
-import model.data_classes.Car as Car
-import model.data_classes.Truck as Truck
-import model.data_classes.Motorcycle as Motorcycle
+
+from model.data_classes.Car import Car
+from model.data_classes.Truck import Truck
+from model.data_classes.Motorcycle import Motorcycle
+
 
 class VehicleManager(IVehicleManager):
     def __init__(self) -> None:

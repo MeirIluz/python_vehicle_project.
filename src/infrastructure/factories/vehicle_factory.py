@@ -7,4 +7,4 @@ class VehicleFactory:
     def create_all() -> IVehicleManager:
         manager: IVehicleManager = VehicleManager()
         manager.run_all()
-        return manager
+
