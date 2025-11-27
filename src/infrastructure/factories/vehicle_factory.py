@@ -4,7 +4,6 @@ from infrastructure.interfaces.ivehicle_manager import IVehicleManager
 
 class VehicleFactory:
     @staticmethod
-    def create_all() -> IVehicleManager:
+    def create_all() -> None:
         manager: IVehicleManager = VehicleManager()
         manager.run_all()
-
