@@ -1,18 +1,14 @@
-from model.data_classes.Vehicle import Vehicle
-from model.data_classes.Car import Car
-from model.data_classes.Truck import Truck
-from model.data_classes.Motorcycle import Motorcycle
-from model.data_classes.Plane import Plane
+from infrastructure.factories.vehicle_infrastructure_factory import VehicleInfrastructureFactory
 
 
 class VehicleFactory:
     @staticmethod
-    def create_vehicle(vehicle_type):
-        vehicle_type = vehicle_type.lower()
+    def create_all():
+        vehicles = [
+            VehicleInfrastructureFactory.create_car(),
+            VehicleInfrastructureFactory.create_motorcycle(),
+            VehicleInfrastructureFactory.create_truck()
+        ]
 
-        for v in Vehicle.ExistingVehicle:
-            if v.__name__.lower() == vehicle_type:
-                return v()
-
-        raise ValueError(
-            f"Vehicle type '{vehicle_type}' not found, make sure you imported it!")
+        for v in vehicles:
+            v.start_engine()
