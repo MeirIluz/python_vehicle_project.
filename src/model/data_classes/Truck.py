@@ -1,10 +1,6 @@
-from .Vehicle import Vehicle
+from infrastructure.interfaces.ivehicle import IVehicle
 
 
-class Truck(Vehicle):
-
-    def __init__(self):
-        super().__init__("truck")
-
+class Truck(IVehicle):
     def start_engine(self):
-        print("I'm a truck")
+        print("I'm a Truck")
